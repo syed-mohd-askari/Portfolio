@@ -380,6 +380,51 @@ main {
   visibility: visible;
 }
 
+
+/*
+  Download Resume
+ */
+
+ .download-button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  transition: var(--transition-2);
+}
+
+.download-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 10px;
+  font-weight: var(--fw-300);
+  background: var(--onyx);
+  border-radius: 8px;
+  width: max-content;
+  color:var(--orange-yellow-crayola);
+
+
+  /* color: var(--white-1);
+  background: var(--onyx);
+  font-size: var(--fs-8);
+  font-weight: var(--fw-300);
+  width: max-content;
+  padding: 3px 12px;
+  border-radius: 8px; */
+}
+
+.download-button:hover > p {
+  color: var(--orange-yellow-crayola);
+}
+
+.download-text {
+  color: var(--white-1);
+}
+
+
 .contacts-list {
   display: grid;
   grid-template-columns: 1fr;
@@ -1855,6 +1900,61 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-text { max-width: 700px; }
 
 }
+
+
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+/**
+ * Larger than 0px screen
+ */
+@media (min-width: 0px) {
+  .copyright {
+    font-size: var(--fs-7);
+    margin-top: 20px;
+    margin-bottom: 140px;
+  }
+}
+
+/**
+ * Larger than 320px screen
+ */
+@media (min-width: 321px) {
+  .copyright {
+    margin-bottom: 0;
+  }
+}
+
+
+
+/**
+ * Larger than 768px screen
+ */
+@media (min-width: 769px) {
+  .copyright {
+    margin-bottom: 90px;
+  }
+}
+
+/**
+ * Larger than 1024px screen
+ */
+@media (min-width: 1025px) {
+  .copyright {
+    margin-bottom: 0;
+  }
+}
+
+
+
+
+
+
 
 
  
